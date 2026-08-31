@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dm.geo Gallery | UPRP.</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <!--FIXED-->
+    <div id="dim-overlay-2"></div>
+    <div id="modal" class="modal-container" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <div id="modal-image-wrapper" class="modal-image-wrapper">
+            <img id="modal-img" alt="">
+        </div>
+        <div class="modal-controls">
+            <button type="button" class="modal-btn" id="modal-zoom-in" aria-label="Zoom in">+</button>
+            <button type="button" class="modal-btn" id="modal-zoom-out" aria-label="Zoom out">−</button>
+            <button type="button" class="modal-btn" id="modal-zoom-reset" aria-label="Reset zoom">1:1</button>
+            <button type="button" class="modal-btn" id="modal-close" aria-label="Close image viewer">×</button>
+        </div>
+    </div>
+    <nav class="navbar-fixed">
+        <a href="works.html" class="material-symbols-outlined back-button" aria-label="Back to works">arrow_back</a>
+    </nav>
+    <!--PARALLAX-->
+    <div class="bg-fixed">
+        <div class="gridline-bg"></div>
+    </div>
+    <div class="page-content">
+              <section id="banner">
+                <div class="wrapper">
+                    <div class="grid">
+                       <div class="griditem grid-pageheading pageheading-bg-layer1">
+                            <div class="pageheading-contents">
+                                <div class="pageheading-title">
+                                    <p class="barcode">dm.geo gallery</p>
+                                    <p>dm.geo gallery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="block">
+                <div class="wrapper">
+                    <div class="grid">
+                        <div class="griditem grid-2-2-static imagecard">
+                            <button type="button" id="trigger1"class="modal-trigger" onclick="openImageModal('img1')">
+                                <img id="img1" src="Resources/dmgeo_gallery/_MG_2538.jpg" alt="cover" class="image-v">
+                            </button>
+                        </div>
+                        <div class="griditem grid-2-1 imagecard">
+                            <button type="button" id="trigger2"class="modal-trigger" onclick="openImageModal('img2')">
+                                <img id="img2" src="Resources/dmgeo_gallery/_MG_2541.jpg" alt="cover" class="image-v">
+                            </button>
+                        </div>
+                        <div class="griditem grid-1-1 imagecard">
+                            <button type="button" id="trigger3"class="modal-trigger" onclick="openImageModal('img3')">
+                                <img id="img3" src="Resources/dmgeo_gallery/_MG_2547.jpg" alt="cover" class="image-v">
+                            </button>
+                        </div>
+                        <div class="griditem grid-1-1 imagecard">
+                            <button type="button" id="trigger4"class="modal-trigger" onclick="openImageModal('img4')">
+                                <img id="img4" src="Resources/dmgeo_gallery/_MG_2561.jpg" alt="cover" class="image-v">
+                            </button>
+                        </div>
+                        <div class="griditem grid-1-2 imagecard">
+                            <button type="button" id="trigger5"class="modal-trigger" onclick="openImageModal('img5')">
+                                <img id="img5" src="Resources/dmgeo_gallery/_MG_2566.jpg" alt="cover" class="image-v">
+                            </button>
+                        </div>
+                        <div class="griditem grid-1-1 imagecard">
+                            <button type="button" id="trigger6"class="modal-trigger" onclick="openImageModal('img6')">
+                                <img id="img6" src="Resources/dmgeo_gallery/_MG_2568.jpg" alt="cover" class="image-v">
+                            </button>
+                        </div>
+                        <div class="griditem grid-1-1 imagecard">
+                            <button type="button" id="trigger7"class="modal-trigger" onclick="openImageModal('img7')">
+                                <img id="img7" src="Resources/dmgeo_gallery/_MG_2570.jpg" alt="cover" class="image-v">
+                            </button>
+                        </div>
+                        <div class="griditem grid-2-1 imagecard">
+                            <button type="button" id="trigger8"class="modal-trigger" onclick="openImageModal('img8')">
+                                <img id="img8" src="Resources/dmgeo_gallery/_MG_2572.jpg" alt="cover" class="image-v">
+                            </button>
+                        </div>
+                        <div class="griditem grid-1-1 imagecard">
+                            <button type="button" id="trigger9"class="modal-trigger" onclick="openImageModal('img9')">
+                                <img id="img9" src="Resources/dmgeo_gallery/_MG_2575.jpg" alt="cover" class="image-v">
+                            </button>
+                        </div>
+                        <div class="griditem grid-2-1 imagecard">
+                            <button type="button" id="trigger10"class="modal-trigger" onclick="openImageModal('img10')">
+                                <img id="img10" src="Resources/dmgeo_gallery/_MG_2577.jpg" alt="cover" class="image-v">
+                            </button>
+                        </div>
+                        <div class="griditem grid-1-2 imagecard">
+                            <button type="button" id="trigger11"class="modal-trigger" onclick="openImageModal('img11')">
+                                <img id="img11" src="Resources/dmgeo_gallery/_MG_2581-Enhanced-NR-1.jpg" alt="cover" class="image-v">
+                            </button>
+                        </div>
+                        <div class="griditem grid-2-1 imagecard">
+                            <button type="button" id="trigger12"class="modal-trigger" onclick="openImageModal('img12')">
+                                <img id="img12" src="Resources/dmgeo_gallery/IMG_2206.jpg" alt="cover" class="image-v">
+                            </button>
+                        </div>
+                        <div class="griditem grid-1-1 imagecard">
+                            <button type="button" id="trigger13"class="modal-trigger" onclick="openImageModal('img13')">
+                                <img id="img13" src="Resources/dmgeo_gallery/IMG_2223.jpg" alt="cover" class="image-v">
+                            </button>
+                        </div>
+                        <div class="griditem grid-1-1 imagecard">
+                            <button type="button" id="trigger9"class="modal-trigger" onclick="openImageModal('img14')">
+                                <img id="img14" src="Resources/dmgeo_gallery/IMG_2225.jpg" alt="cover" class="image-v">
+                            </button>
+                        </div>
+                        <div class="griditem grid-1-1 imagecard">
+                            <button type="button" id="trigger9"class="modal-trigger" onclick="openImageModal('img14')">
+                                <img id="img14" src="Resources/dmgeo_gallery/IMG_2227.jpg" alt="cover" class="image-v">
+                            </button>
+                        </div> 
+                        <div class="griditem grid-1-1 imagecard">
+                            <button type="button" id="trigger15"class="modal-trigger" onclick="openImageModal('img15')">
+                                <img id="img15" src="Resources/dmgeo_gallery/IMG_2230.jpg" alt="cover" class="image-v">
+                            </button>
+                        </div>                        
+                        
+
+
+                    </div>
+                </div>
+            </section>
+
+            
+
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
