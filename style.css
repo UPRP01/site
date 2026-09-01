@@ -268,10 +268,19 @@ NAVIGATIONBAR
     color: var(--blackwhite);
     padding: 0.5rem;
     pointer-events: all;
-    transition: all 0.2s ease-out;
     font-weight: 300;
     text-decoration: none;
     user-select: none;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease-out, visibility 0s linear 0s, background-color 0.2s ease-out, color 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.back-button.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease-out, visibility 0s linear 0.3s, background-color 0.2s ease-out, color 0.2s ease-out, transform 0.2s ease-out;
 }
 
 
@@ -359,7 +368,14 @@ GRID
     overflow: hidden;
 
 }
-
+.grid-05-05 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+.grid-1-05 {
+    grid-row: span 1;
+    grid-column: span 2;
+}
 .grid-2-2-static {
     grid-row: span 4;
     grid-column: span 4;
@@ -369,6 +385,10 @@ GRID
     grid-column: span 2;
 }
 .grid-2-1 {
+    grid-row: span 2;
+    grid-column: span 4;
+}
+.grid-2-1-static {
     grid-row: span 2;
     grid-column: span 4;
 }
@@ -599,7 +619,10 @@ CARD
 .bg-blue {
     background-color: var(--bg-blue);
 }
-.bg-accent *, .bg-red *, .bg-magenta *, .bg-orange *, .bg-green *, .bg-blue * {
+.bg-black {
+    background-color: var(--blackwhite);
+}
+.bg-accent *, .bg-red *, .bg-magenta *, .bg-orange *, .bg-green *, .bg-blue *, .bg-black * {
     color: var(--whiteblack) !important;
 }
 

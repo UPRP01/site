@@ -156,7 +156,7 @@ function closeImageModal() {
 
 function setBackButtonHidden(hidden) {
     document.querySelectorAll('.back-button').forEach(btn => {
-        btn.style.visibility = hidden ? 'hidden' : '';
+        btn.classList.toggle('hidden', hidden);
     });
 }
 
